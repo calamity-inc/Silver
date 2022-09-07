@@ -67,6 +67,14 @@ input[type="text"]
 	background: rgba(0, 0, 0, 0.05);
 }
 
+@media (max-width: 600px)
+{
+	input[type="text"]
+	{
+		width: 100%;
+	}
+}
+
 ::placeholder
 {
 	color: rgba(255, 255, 255, 0.6);
