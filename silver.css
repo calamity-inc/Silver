@@ -4,8 +4,8 @@
 	--sleeve-padding: 14px;
 }
 
-[data-darkreader-mode] body:before,
-[data-darkreader-scheme] body:before
+[data-darkreader-mode] body:not(.slv-ignore-darkreader):before,
+[data-darkreader-scheme] body:not(.slv-ignore-darkreader):before
 {
 	display: block;
 	background: #bd2626;
