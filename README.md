@@ -1,6 +1,8 @@
 # silver.css
 
-Make your website look much better in just 2 lines of HTML:
+A dead-simple CSS framework made for dark mode.
+
+## Usage
 
 ```HTML
 <meta name="viewport" content="width=device-width, initial-scale=1">
