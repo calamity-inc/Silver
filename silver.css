@@ -113,3 +113,26 @@ hr
 	border: 0;
 	border-top: 1px solid #2a2a2a;
 }
+
+@keyframes slv-loader
+{
+	0%       { content: "..." }
+	16.6666% { content: ".. " }
+	33.3333% { content: ".  " }
+	49.9999% { content: "   " }
+	66.6666% { content: "  ." }
+	83.3333% { content: " .." }
+	100%     { content: "..." }
+}
+
+.slv-loader
+{
+	font-family: monospace;
+}
+
+.slv-loader:after
+{
+	content: "...";
+	animation: slv-loader 2s linear infinite;
+	white-space: pre;
+}
