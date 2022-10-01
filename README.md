@@ -14,6 +14,7 @@ A dead-simple CSS framework made for dark mode.
 - `slv-container`
 - `slv-sleeve`
 - `slv-loader`
+- `slv-hidden`
 
 ## Config
 

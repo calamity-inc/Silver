@@ -141,3 +141,8 @@ hr
 	animation: slv-loader 2s linear infinite;
 	white-space: pre;
 }
+
+.slv-hidden
+{
+	display: none;
+}
