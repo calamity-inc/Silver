@@ -100,12 +100,17 @@ form
 
 a
 {
-	color: #06f;
+	color: #257afb
 }
 
-a:hover, a:focus
+a:hover
 {
-	color: #1875ff;
+	color: #3586ff;
+}
+
+a:focus
+{
+	color: #4791ff;
 }
 
 hr
