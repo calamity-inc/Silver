@@ -11,10 +11,12 @@ A dead-simple CSS framework made for dark mode.
 
 ## Builtin components/classes
 
-- `slv-container`
-- `slv-sleeve`
-- `slv-loader`
-- `slv-hidden`
+- `.slv-container`
+- `.slv-sleeve`
+- `.slv-loader`
+- `.slv-hidden`
+- `.slv-button`
+	- `.slv-button.slv-danger`
 
 ## Config
 

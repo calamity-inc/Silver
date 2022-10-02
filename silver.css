@@ -146,3 +146,31 @@ hr
 {
 	display: none;
 }
+
+.slv-button, .slv-button:hover, .slv-button:focus, .slv-button:active
+{
+	color: inherit;
+}
+
+.slv-button
+{
+	text-decoration: none;
+	padding: 12px 20px;
+	padding-top: 8px;
+	display: inline-block;
+	background: #257afb;
+	border-bottom: 4px solid #0e5bd1;
+}
+
+.slv-button.slv-danger
+{
+	background: #c52121;
+	border-bottom: 4px solid #8d0000;
+}
+
+.slv-button:active
+{
+	border-bottom-width: 2px;
+	margin-bottom: calc(4px - 2px);
+	transform: translate(0px, 2px);
+}
