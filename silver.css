@@ -116,7 +116,8 @@ a:focus
 hr
 {
 	border: 0;
-	border-top: 1px solid #2a2a2a;
+	border-top: 1px solid #222222;
+	margin-top: 14px;
 }
 
 @keyframes slv-loader
