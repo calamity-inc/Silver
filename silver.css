@@ -183,3 +183,25 @@ hr
 	margin-bottom: calc(4px - 2px);
 	transform: translate(0px, 2px);
 }
+
+/* Sidebar */
+:has(.slv-sidebar)
+{
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+}
+
+.slv-sidebar
+{
+	width: 200px;
+	background: #334cfb;
+	border-right: 4px solid #273dd9;
+	padding: 0 var(--slv-body-lr-margin);
+}
+
+:has(.slv-sidebar) > :not(.slv-sidebar):nth-of-type(2)
+{
+	flex-grow: 1;
+	margin: 0 var(--slv-body-lr-margin);
+}

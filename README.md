@@ -22,6 +22,7 @@ Components:
 - `.slv-loader`
 - `.slv-button`
 	- `.slv-button.slv-danger`
+- `.slv-sidebar`
 
 ## Config
 
