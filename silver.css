@@ -103,6 +103,11 @@ hr
 	margin-top: 14px;
 }
 
+::selection
+{
+	background: #40a6ff;
+}
+
 /* Hidden */
 .slv-hidden
 {
@@ -124,11 +129,6 @@ hr
 	margin-left: calc(var(--slv-body-lr-margin) * -1);
 	width: calc(100% - (var(--slv-sleeve-padding) * 2) + (var(--slv-body-lr-margin) * 2));
 	padding: var(--slv-sleeve-padding);
-}
-
-.slv-sleeve ::selection
-{
-	background: #40a6ff;
 }
 
 /* Loader */
