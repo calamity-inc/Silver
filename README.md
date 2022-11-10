@@ -11,12 +11,15 @@ A dead-simple CSS framework made for dark mode.
 <link rel="stylesheet" href="https://calamity.gg/silver.css">
 ```
 
-## Builtin components/classes
+## Builtin classes
 
+Utility:
+- `.slv-hidden`
+
+Components:
 - `.slv-container`
 - `.slv-sleeve`
 - `.slv-loader`
-- `.slv-hidden`
 - `.slv-button`
 	- `.slv-button.slv-danger`
 

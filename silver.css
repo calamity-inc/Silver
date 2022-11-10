@@ -1,9 +1,11 @@
+/* Configuration defaults */
 :root
 {
 	--slv-body-lr-margin: 12px;
 	--slv-sleeve-padding: 14px;
 }
 
+/* Dark Reader notice */
 [data-darkreader-mode] body:not(.slv-ignore-darkreader):before,
 [data-darkreader-scheme] body:not(.slv-ignore-darkreader):before
 {
@@ -13,6 +15,7 @@
 	content: "Note: Because Dark Reader is enabled, this page (which is already in dark mode) is looking worse.";
 }
 
+/* Improved look */
 html
 {
 	background: #111;
@@ -45,13 +48,6 @@ p
 	margin-block: 0.5em;
 }
 
-.slv-container
-{
-	max-width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 input[type="text"]
 {
 	background: inherit;
@@ -78,19 +74,6 @@ input[type="text"]
 ::placeholder
 {
 	color: rgba(255, 255, 255, 0.6);
-}
-
-.slv-sleeve
-{
-	background: #0089ff;
-	margin-left: calc(var(--slv-body-lr-margin) * -1);
-	width: calc(100% - (var(--slv-sleeve-padding) * 2) + (var(--slv-body-lr-margin) * 2));
-	padding: var(--slv-sleeve-padding);
-}
-
-.slv-sleeve ::selection
-{
-	background: #40a6ff;
 }
 
 form
@@ -120,6 +103,35 @@ hr
 	margin-top: 14px;
 }
 
+/* Hidden */
+.slv-hidden
+{
+	display: none;
+}
+
+/* Container */
+.slv-container
+{
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Sleeve */
+.slv-sleeve
+{
+	background: #0089ff;
+	margin-left: calc(var(--slv-body-lr-margin) * -1);
+	width: calc(100% - (var(--slv-sleeve-padding) * 2) + (var(--slv-body-lr-margin) * 2));
+	padding: var(--slv-sleeve-padding);
+}
+
+.slv-sleeve ::selection
+{
+	background: #40a6ff;
+}
+
+/* Loader */
 @keyframes slv-loader
 {
 	0%       { content: "..." }
@@ -143,11 +155,7 @@ hr
 	white-space: pre;
 }
 
-.slv-hidden
-{
-	display: none;
-}
-
+/* Button */
 .slv-button, .slv-button:hover, .slv-button:focus, .slv-button:active
 {
 	color: inherit;
