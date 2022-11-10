@@ -1,7 +1,7 @@
 :root
 {
-	--body-lr-margin: 12px;
-	--sleeve-padding: 14px;
+	--slv-body-lr-margin: 12px;
+	--slv-sleeve-padding: 14px;
 }
 
 [data-darkreader-mode] body:not(.slv-ignore-darkreader):before,
@@ -23,7 +23,7 @@ html
 
 body
 {
-	margin: 8px var(--body-lr-margin);
+	margin: 8px var(--slv-body-lr-margin);
 }
 
 h1
@@ -83,9 +83,9 @@ input[type="text"]
 .slv-sleeve
 {
 	background: #0089ff;
-	margin-left: calc(var(--body-lr-margin) * -1);
-	width: calc(100% - (var(--sleeve-padding) * 2) + (var(--body-lr-margin) * 2));
-	padding: var(--sleeve-padding);
+	margin-left: calc(var(--slv-body-lr-margin) * -1);
+	width: calc(100% - (var(--slv-sleeve-padding) * 2) + (var(--slv-body-lr-margin) * 2));
+	padding: var(--slv-sleeve-padding);
 }
 
 .slv-sleeve ::selection
