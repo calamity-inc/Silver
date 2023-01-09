@@ -202,8 +202,7 @@ hr
 .slv-sidebar
 {
 	width: 200px;
-	background: #334cfb;
-	border-right: 4px solid #273dd9;
+	border-right: 1px solid rgb(47, 51, 54);
 	padding: 0 var(--slv-body-lr-margin);
 }
 
