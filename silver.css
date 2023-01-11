@@ -211,3 +211,8 @@ hr
 	flex-grow: 1;
 	margin: 0 var(--slv-body-lr-margin);
 }
+
+.slv-sidebar a
+{
+	color: inherit;
+}
