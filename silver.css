@@ -5,9 +5,9 @@
 	--slv-sleeve-padding: 14px;
 }
 
-/* Dark Reader notice */
-[data-darkreader-mode] body:not(.slv-ignore-darkreader):before,
-[data-darkreader-scheme] body:not(.slv-ignore-darkreader):before
+/* Dark Reader notice - disabled if :has(.slv-sidebar) because `display: flex` on body messes with this */
+[data-darkreader-mode] body:not(.slv-ignore-darkreader):not(:has(.slv-sidebar)):before,
+[data-darkreader-scheme] body:not(.slv-ignore-darkreader):not(:has(.slv-sidebar)):before
 {
 	display: block;
 	background: #bd2626;
