@@ -192,6 +192,7 @@ hr
 	display: inline-block;
 	background: #257afb;
 	border-bottom: 4px solid #0e5bd1;
+	user-select: none;
 }
 
 .slv-button.slv-danger
