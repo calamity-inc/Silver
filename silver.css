@@ -65,8 +65,6 @@ input[type="password"]
 
 	font-size: 1.3em;
 
-	width: 50%;
-
 	outline: none;
 	background: rgba(0, 0, 0, 0.05);
 
@@ -79,10 +77,18 @@ input[type="password"]
 	margin: 3px 0;
 }
 
+input[type="text"],
+input[type="password"],
+.slv-form-width
+{
+	width: 50%;
+}
+
 @media (max-width: 600px)
 {
 	input[type="text"],
-	input[type="password"]
+	input[type="password"],
+	.slv-form-width
 	{
 		width: 100%;
 	}
