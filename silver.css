@@ -71,14 +71,12 @@ input[type="password"]
 	padding: 5px;
 }
 
-:not(.slv-sleeve) input[type="text"],
-:not(.slv-sleeve) input[type="password"]
+:not(.slv-sleeve) input
 {
 	margin: 3px 0;
 }
 
-input[type="text"],
-input[type="password"],
+input,
 .slv-form-width
 {
 	width: 50%;
@@ -86,8 +84,7 @@ input[type="password"],
 
 @media (max-width: 600px)
 {
-	input[type="text"],
-	input[type="password"],
+	input,
 	.slv-form-width
 	{
 		width: 100%;
