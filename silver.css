@@ -68,6 +68,8 @@ input[type="text"]
 
 	outline: none;
 	background: rgba(0, 0, 0, 0.05);
+
+	padding: 5px;
 }
 
 @media (max-width: 600px)
