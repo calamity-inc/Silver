@@ -94,6 +94,12 @@ input[type="password"],
 	}
 }
 
+input[type="text"].slv-validated,
+input[type="password"].slv-validated
+{
+	border-color: #449961;
+}
+
 ::placeholder
 {
 	color: rgba(255, 255, 255, 0.6);
