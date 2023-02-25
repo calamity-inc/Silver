@@ -1,0 +1,95 @@
+#slv-navbar
+{
+	display: flex;
+}
+
+#slv-navbar.slv-sidebar
+{
+	flex-direction: column;
+	width: 40px;
+}
+
+#slv-navbar.slv-topbar
+{
+	height: 40px;
+}
+
+#slv-navbar > :first-child
+{
+	flex-grow: 1;
+}
+
+#slv-navbar.slv-topbar :has(.slv-navbar-item)
+{
+	display: flex;
+}
+
+#slv-navbar svg
+{
+	fill: #fff;
+	width: 25px;
+	height: 25px;
+}
+
+#slv-navbar-expand
+{
+	cursor: pointer;
+}
+
+.slv-sidebar #slv-navbar-expand
+{
+	padding-bottom: 2px;
+	text-align: center;
+}
+
+.slv-topbar #slv-navbar-expand
+{
+	display: none;
+	/*display: flex;
+	align-items: center;*/
+}
+
+/* Make clicking on sidebar's expand button easier */
+.slv-sidebar #slv-navbar-expand { padding-bottom: calc(6px + 2px); }
+.slv-sidebar:has(#slv-navbar-expand) { padding: 0; width: calc(40px + 6px + 6px); }
+.slv-sidebar:has(#slv-navbar-expand) > :first-child { padding: 6px; }
+
+.slv-navbar-item
+{
+	padding: 5px;
+
+	display: flex;
+	align-items: center;
+
+	text-decoration: none;
+
+	cursor: pointer;
+}
+
+.slv-sidebar .slv-navbar-item
+{
+	margin-bottom: 6px;
+	margin-left: 3px; /* looks centered when not expanded */
+}
+
+#slv-navbar.slv-expanded .slv-navbar-item
+{
+	padding-right: 6px;
+	margin-right: 3px;
+}
+
+#slv-navbar.slv-expanded .slv-navbar-item:hover
+{
+	background: #222;
+	border-radius: 5px;
+}
+
+#slv-navbar.slv-expanded .slv-navbar-item svg
+{
+	padding-right: 7px;
+}
+
+#slv-navbar:not(.slv-expanded) .slv-if-expanded
+{
+	display: none;
+}

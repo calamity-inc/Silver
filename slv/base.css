@@ -125,7 +125,7 @@ a:focus
 hr
 {
 	border: 0;
-	border-top: 1px solid #222222;
+	border-top: 1px solid #222;
 	margin-top: 14px;
 }
 
@@ -218,7 +218,10 @@ hr
 {
 	width: 200px;
 	border-right: 1px solid rgb(47, 51, 54);
-	padding: 0 var(--slv-body-lr-margin);
+	padding: 6px;
+
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 
 :has(.slv-sidebar) > :not(.slv-sidebar):nth-of-type(2)
@@ -227,7 +230,46 @@ hr
 	margin: 0 var(--slv-body-lr-margin);
 }
 
-.slv-sidebar a
+.slv-sidebar a,
+.slv-topbar a
 {
 	color: inherit;
+}
+
+.slv-sidebar .slv-divider
+{
+	border-top: 1px solid #222;
+	margin-top: 6px;
+	margin-bottom: 0.5em;
+}
+
+/* Topbar */
+:has(.slv-topbar)
+{
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.slv-topbar
+{
+	height: 200px;
+	border-bottom: 1px solid rgb(47, 51, 54);
+	padding: 6px;
+
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+:has(.slv-topbar) > :not(.topbar):nth-of-type(2)
+{
+	flex-grow: 1;
+	margin: 0 var(--slv-body-lr-margin);
+}
+
+.slv-topbar .slv-divider
+{
+	width: 0;
+	border-right: 1px solid #222;
+	margin: 0 6px;
 }
