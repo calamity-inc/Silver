@@ -129,11 +129,6 @@ hr
 	margin-top: 14px;
 }
 
-::selection
-{
-	background: #40a6ff;
-}
-
 /* Hidden */
 .slv-hidden
 {
