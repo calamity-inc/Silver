@@ -2,7 +2,7 @@
 
 A website design framework made for dark mode.
 
-[View the demo](https://calamity-inc.github.io/silver.css/demo.html)
+[View the demo](https://calamity-inc.github.io/Silver/demo.html)
 
 ## Usage
 
