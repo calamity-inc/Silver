@@ -1,6 +1,6 @@
-# silver.css
+# Silver
 
-A dead-simple CSS framework made for dark mode.
+A website design framework made for dark mode.
 
 [View the demo](https://calamity-inc.github.io/silver.css/demo.html)
 
