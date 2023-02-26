@@ -273,3 +273,69 @@ hr
 	border-right: 1px solid #222;
 	margin: 0 6px;
 }
+
+/* Tooltips */
+.slv-tooltip-top[aria-label],
+.slv-tooltip-right[aria-label],
+.slv-tooltip-left[aria-label],
+.slv-tooltip-bottom[aria-label]
+{
+	position: relative;
+}
+
+.slv-tooltip-top[aria-label]::before,
+.slv-tooltip-right[aria-label]::before,
+.slv-tooltip-left[aria-label]::before,
+.slv-tooltip-bottom[aria-label]::before
+{
+	display: none;
+	position: absolute;
+	z-index: 99;
+	content: attr(aria-label);
+	border-radius: 10px;
+	background: #000;
+	color: #fff;
+	padding: 0.25rem 0.5rem;
+	pointer-events: none;
+}
+
+.slv-tooltip-long::before
+{
+	width: 100%;
+}
+
+.slv-tooltip-top[aria-label]::before
+{
+	bottom: 100%;
+	left: 50%;
+	transform: translate(-50%,-.25rem);
+}
+
+.slv-tooltip-right[aria-label]::before
+{
+	left: 100%;
+	top: 50%;
+	transform: translate(.25rem,-50%);
+}
+
+.slv-tooltip-left[aria-label]::before
+{
+	right: 100%;
+	top: 50%;
+	transform: translate(-.25rem,-50%);
+}
+
+.slv-tooltip-bottom[aria-label]::before
+{
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%,.25rem);
+}
+
+.slv-tooltip-top[aria-label]:hover::before,
+.slv-tooltip-right[aria-label]:hover::before,
+.slv-tooltip-left[aria-label]:hover::before,
+.slv-tooltip-bottom[aria-label]:hover::before
+{
+	display: block;
+}
