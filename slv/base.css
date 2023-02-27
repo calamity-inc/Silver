@@ -185,15 +185,15 @@ hr
 	padding: 12px 20px;
 	padding-top: 8px;
 	display: inline-block;
-	background: #257afb;
-	border-bottom: 4px solid #0e5bd1;
+	background: hsl(216deg 100% 55%);
+	border-bottom: 4px solid hsl(216deg 100% 40%);
 	user-select: none;
 }
 
 .slv-button.slv-danger
 {
-	background: #c52121;
-	border-bottom: 4px solid #8d0000;
+	background: hsl(0deg 70% 45%);
+	border-bottom: 4px solid hsl(0deg 75% 30%);
 }
 
 .slv-button:active
