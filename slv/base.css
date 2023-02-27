@@ -174,11 +174,6 @@ hr
 }
 
 /* Button */
-.slv-button, .slv-button:hover, .slv-button:focus, .slv-button:active
-{
-	color: inherit;
-}
-
 .slv-button
 {
 	text-decoration: none;
@@ -188,7 +183,18 @@ hr
 	background: hsl(216deg 100% 55%);
 	border-bottom: 4px solid hsl(216deg 100% 40%);
 	user-select: none;
+
+	/* For <button> */
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: inherit;
 }
+
+/* For <a> */
+.slv-button, .slv-button:hover, .slv-button:focus, .slv-button:active { color: inherit; }
 
 .slv-button.slv-danger
 {
