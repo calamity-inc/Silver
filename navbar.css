@@ -34,6 +34,7 @@
 #slv-navbar-expand
 {
 	cursor: pointer;
+	user-select: none;
 }
 
 .slv-sidebar #slv-navbar-expand
