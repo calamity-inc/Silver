@@ -6,8 +6,7 @@
 }
 
 /* Dark Reader notice - disabled if :has(.slv-sidebar) because `display: flex` on body messes with this */
-[data-darkreader-mode] body:not(.slv-ignore-darkreader):not(:has(.slv-sidebar)):before,
-[data-darkreader-scheme] body:not(.slv-ignore-darkreader):not(:has(.slv-sidebar)):before
+:where([data-darkreader-mode], [data-darkreader-scheme]) body:not(.slv-ignore-darkreader):not(:has(.slv-sidebar)):before
 {
 	display: block;
 	background: #bd2626;
@@ -55,8 +54,7 @@ p
 	margin-block: 0.5em;
 }
 
-input[type="text"],
-input[type="password"]
+input:where([type="text"], [type="password"])
 {
 	background: inherit;
 	color: inherit;
@@ -91,8 +89,7 @@ input,
 	}
 }
 
-input[type="text"].slv-validated,
-input[type="password"].slv-validated
+input:where([type="text"], [type="password"]).slv-validated
 {
 	border-color: #449961;
 }
@@ -230,8 +227,7 @@ hr
 	margin: 0 var(--slv-body-lr-margin);
 }
 
-.slv-sidebar a,
-.slv-topbar a
+:where(.slv-sidebar, .slv-topbar) a
 {
 	color: inherit;
 }
@@ -275,18 +271,12 @@ hr
 }
 
 /* Tooltips */
-.slv-tooltip-top[aria-label],
-.slv-tooltip-right[aria-label],
-.slv-tooltip-left[aria-label],
-.slv-tooltip-bottom[aria-label]
+:where(.slv-tooltip-top, .slv-tooltip-right, .slv-tooltip-left, .slv-tooltip-bottom)[aria-label]
 {
 	position: relative;
 }
 
-.slv-tooltip-top[aria-label]::before,
-.slv-tooltip-right[aria-label]::before,
-.slv-tooltip-left[aria-label]::before,
-.slv-tooltip-bottom[aria-label]::before
+:where(.slv-tooltip-top, .slv-tooltip-right, .slv-tooltip-left, .slv-tooltip-bottom)[aria-label]::before
 {
 	display: none;
 	position: absolute;
@@ -332,10 +322,7 @@ hr
 	transform: translate(-50%,.25rem);
 }
 
-.slv-tooltip-top[aria-label]:hover::before,
-.slv-tooltip-right[aria-label]:hover::before,
-.slv-tooltip-left[aria-label]:hover::before,
-.slv-tooltip-bottom[aria-label]:hover::before
+:where(.slv-tooltip-top, .slv-tooltip-right, .slv-tooltip-left, .slv-tooltip-bottom)[aria-label]:hover::before
 {
 	display: block;
 }
