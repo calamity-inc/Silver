@@ -14,16 +14,3 @@ A website design framework made for dark mode.
 ## Config
 
 By default, Silver shows a warning when Dark Reader is enabled since it has no considerations for websites already being in dark mode. You can disable this by adding the `slv-ignore-darkreader` class to your `body` tag.
-
-## Builtin classes
-
-Utility:
-- `.slv-hidden`
-
-Components:
-- `.slv-container`
-- `.slv-sleeve`
-- `.slv-loader`
-- `.slv-button`
-	- `.slv-button.slv-danger`
-- `.slv-sidebar`
