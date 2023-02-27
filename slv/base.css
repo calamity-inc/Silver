@@ -227,7 +227,8 @@ hr
 	margin: 0 var(--slv-body-lr-margin);
 }
 
-:where(.slv-sidebar, .slv-topbar) a
+.slv-sidebar a,
+.slv-topbar a
 {
 	color: inherit;
 }
