@@ -210,7 +210,7 @@ hr
 .slv-button:active
 {
 	border-bottom-width: 2px;
-	margin-bottom: calc(4px - 2px);
+	margin-bottom: calc(7px - 2px); /* Might need to be calc(4px - 2px) if within .slv-sleeve? */
 	transform: translate(0px, 2px);
 }
 
