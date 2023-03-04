@@ -234,6 +234,13 @@ hr
 	margin: 0 var(--slv-body-lr-margin);
 }
 
+.slv-sidebar-brand
+{
+	margin: 0px;
+	margin-bottom: 7px;
+	text-align: center;
+}
+
 .slv-sidebar a,
 .slv-topbar a
 {
