@@ -210,7 +210,7 @@ hr
 	transform: translate(0px, 2px);
 }
 
-/* Sidebar */
+/* Sidebar & Topbar */
 :has(.slv-sidebar)
 {
 	margin: 0;
@@ -254,7 +254,6 @@ hr
 	margin-bottom: 0.5em;
 }
 
-/* Topbar */
 :has(.slv-topbar)
 {
 	margin: 0;
@@ -283,6 +282,41 @@ hr
 	width: 0;
 	border-right: 1px solid #222;
 	margin: 0 6px;
+}
+
+:where(.slv-sidebar, .slv-topbar) .slv-item
+{
+	padding: 5px;
+
+	display: flex;
+	align-items: center;
+
+	text-decoration: none;
+
+	cursor: pointer;
+}
+
+.slv-sidebar .slv-item
+{
+	margin-bottom: 6px;
+	margin-left: 3px; /* looks centered when not expanded */
+}
+
+:where(#slv-navbar.slv-expanded, :where(.slv-sidebar, .slv-topbar):not(#slv-navbar)) .slv-item
+{
+	padding-right: 6px;
+	margin-right: 3px;
+}
+
+:where(#slv-navbar.slv-expanded, :where(.slv-sidebar, .slv-topbar):not(#slv-navbar)) .slv-item:hover
+{
+	background: #222;
+	border-radius: 5px;
+}
+
+:where(#slv-navbar.slv-expanded, :where(.slv-sidebar, .slv-topbar):not(#slv-navbar)) .slv-item svg
+{
+	padding-right: 7px;
 }
 
 /* Tooltips */
