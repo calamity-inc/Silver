@@ -238,6 +238,11 @@ hr
 	margin: 0 var(--slv-body-lr-margin);
 }
 
+:has(.slv-sidebar) > :not(.slv-sidebar):nth-of-type(2) :first-child
+{
+	margin-top: 0;
+}
+
 .slv-sidebar-brand
 {
 	margin: 0px;
