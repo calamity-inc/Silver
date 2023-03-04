@@ -74,10 +74,14 @@ input:where([type="text"], [type="password"])
 	margin: 3px 0;
 }
 
-input,
-.slv-form-width
+input:not([type="submit"], [type="reset"]), .slv-form-width
 {
 	width: 50%;
+}
+
+:has(.slv-sidebar) :where(input:not([type="submit"], [type="reset"]), .slv-form-width)
+{
+	width: 100% !important; /* the rule before this one has higher precedence, but we want to override it. :not(:has(.slv-sidebar)) doesn't work because multiple elements could be the parent. */
 }
 
 @media (max-width: 600px)
