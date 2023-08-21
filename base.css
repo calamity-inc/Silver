@@ -56,7 +56,6 @@ p
 
 input:where([type="text"], [type="password"])
 {
-	background: inherit;
 	color: inherit;
 
 	border: 1px solid #2a2a2a;
