@@ -17,7 +17,3 @@ Additionally, if you want the navbar:
 <link rel="stylesheet" href="https://slv.do/navbar.css">
 <script src="https://slv.do/navbar.js"></script>
 ```
-
-## Config
-
-By default, Silver shows a warning when Dark Reader is enabled since it has no considerations for websites already being in dark mode. You can disable this by adding the `slv-ignore-darkreader` class to your `body` tag.

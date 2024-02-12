@@ -5,15 +5,6 @@
 	--slv-sleeve-padding: 14px;
 }
 
-/* Dark Reader notice - disabled if :has(.slv-sidebar) because `display: flex` on body messes with this */
-:where([data-darkreader-mode], [data-darkreader-scheme]) body:not(.slv-ignore-darkreader):not(:has(.slv-sidebar)):before
-{
-	display: block;
-	background: #bd2626;
-	padding: 10px;
-	content: "Note: Because Dark Reader is enabled, this page (which is already in dark mode) is looking worse.";
-}
-
 /* Improved look */
 html
 {
