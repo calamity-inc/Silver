@@ -126,6 +126,11 @@ code
 	border: 1px solid #000;
 }
 
+li:not(:last-child)
+{
+	margin-bottom: 4px;
+}
+
 /* Hidden */
 .slv-hidden
 {
